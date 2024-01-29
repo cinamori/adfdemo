@@ -1,0 +1,9 @@
+{
+	"name": "cigithubdemo",
+	"location": "japaneast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2bfea208-88b9-4394-8c08-887f1b566a8a",
+		"tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	}
+}
