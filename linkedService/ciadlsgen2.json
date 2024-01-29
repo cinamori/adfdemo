@@ -1,0 +1,12 @@
+{
+	"name": "ciadlsgen2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://cidatalakegen2.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDYzNDJCNkY3LTU3RUItNEE1MC05NEM2LUQwNzI0MzczOUYxRV9lMDJiNTU0NC01N2M4LTQ0YjctYWZiMC0xNjJmMDZmMDQ3ZDAiDQp9"
+		}
+	}
+}
