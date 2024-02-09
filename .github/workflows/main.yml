@@ -1,7 +1,13 @@
+# ワークフローの起動設定
 on:
-  push:
-    branches:
-    - main
+  # main ブランチに push もしくは pull request が発生した際に下記ワークフローを実行
+  #push:
+  #  branches: [ main ]
+  #pull_request:
+  #  branches: [ main ]
+ 
+  # ワークフローは手動で実行可能
+  workflow_dispatch:
 
 permissions:
       id-token: write
