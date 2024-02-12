@@ -73,4 +73,4 @@ jobs:
           dataFactoryName: targetGitHubADF
           armTemplateFile: ARMTemplateForFactory.json
           armTemplateParametersFile: 	ARMTemplateParametersForFactory.json
-          #additionalParameters: AzureDataLakeStoragePE_properties_privateLinkResourceId = "/subscriptions/5b0954ff-3dce-4d45-842a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.Storage/storageAccounts/ciprodadlsgen2"
+          additionalParameters: ciadlsgen2_connectionString = https://ciprodadlsgen2.dfs.core.windows.net/;QueueEndpoint=https://ciprodadlsgen2.queue.core.windows.net/;FileEndpoint=https://ciprodadlsgen2.file.core.windows.net/;TableEndpoint=https://ciprodadlsgen2.table.core.windows.net/;SharedAccessSignature=sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupyx&se=2024-02-12T21:19:15Z&st=2024-02-12T13:19:15Z&spr=https&sig=EGuHrmQgr7SsfZvF3DTqcDm3JyY92ZXwbmyoFTMvy58%3D
