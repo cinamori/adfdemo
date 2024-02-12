@@ -73,4 +73,4 @@ jobs:
           dataFactoryName: targetGitHubADF
           armTemplateFile: ARMTemplateForFactory.json
           armTemplateParametersFile: 	ARMTemplateParametersForFactory.json
-          additionalParameters: AzureDataLakeStoragePE_properties_privateLinkResourceId = "/subscriptions/5b0954ff-3dce-4d45-842a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.Storage/storageAccounts/ciprodadlsgen2"
+          #additionalParameters: AzureDataLakeStoragePE_properties_privateLinkResourceId = "/subscriptions/5b0954ff-3dce-4d45-842a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.Storage/storageAccounts/ciprodadlsgen2"
