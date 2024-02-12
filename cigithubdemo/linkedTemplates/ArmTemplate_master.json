@@ -15,6 +15,14 @@
 			"type": "string",
 			"defaultValue": "https://cidatalakegen2.dfs.core.windows.net/"
 		},
+		"AzureDataLakeStoragePE_properties_privateLinkResourceId": {
+			"type": "string",
+			"defaultValue": "/subscriptions/5b0954ff-3dce-4d45-842a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.Storage/storageAccounts/cidevadlsgen2"
+		},
+		"AzureDataLakeStoragePE_properties_groupId": {
+			"type": "string",
+			"defaultValue": "dfs"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -47,6 +55,12 @@
 					},
 					"ciadlsgen2_properties_typeProperties_url": {
 						"value": "[parameters('ciadlsgen2_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStoragePE_properties_privateLinkResourceId": {
+						"value": "[parameters('AzureDataLakeStoragePE_properties_privateLinkResourceId')]"
+					},
+					"AzureDataLakeStoragePE_properties_groupId": {
+						"value": "[parameters('AzureDataLakeStoragePE_properties_groupId')]"
 					}
 				}
 			},

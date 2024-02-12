@@ -10,6 +10,12 @@
 		},
 		"ciadlsgen2_properties_typeProperties_url": {
 			"value": "https://cidatalakegen2.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStoragePE_properties_privateLinkResourceId": {
+			"value": "/subscriptions/5b0954ff-3dce-4d45-842a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.Storage/storageAccounts/cidevadlsgen2"
+		},
+		"AzureDataLakeStoragePE_properties_groupId": {
+			"value": "dfs"
 		}
 	}
 }
