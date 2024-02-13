@@ -44,7 +44,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: ExportedArmTemplate # (4) use the same artifact name you used in the previous export step
-        path: ${{github.workspace}}/build/ExportedArmTemplate
+        path: ${{github.workspace}}/build/ARMTemplateParametersForFactory.json
         
   release:
     needs: build
@@ -55,7 +55,7 @@ jobs:
       - name: Download a Build Artifact
         uses: actions/download-artifact@v3.0.2
         with:
-          name: ExportedArmTemplate # (5) Artifact name 
+          name: ARMTemplateParametersForFactory.json # (5) Artifact name 
 
 
       - name: Login via Az module
@@ -72,5 +72,5 @@ jobs:
           resourceGroupName: CICDDemo
           dataFactoryName: targetGitHubADF
           armTemplateFile: ARMTemplateForFactory.json
-          armTemplateParametersFile: 	ARMTemplateParametersForFactory.json
+          armTemplateParametersFile: ARMTemplateParametersForFactory.json
           additionalParameters: AzureDataLakeStoragePE_properties_privateLinkResourceId = /subscriptions/5b0954ff-3dce-4d45-842a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.Storage/storageAccounts/ciprodadlsgen2
