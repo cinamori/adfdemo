@@ -44,7 +44,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: ExportedArmTemplate # (4) use the same artifact name you used in the previous export step
-        path: ${{github.workspace}}/build/ARMTemplateParametersForFactory.json
+        path: ${{github.workspace}}/build/ARMTemplateForFactory.json
         
   release:
     needs: build
@@ -55,7 +55,7 @@ jobs:
       - name: Download a Build Artifact
         uses: actions/download-artifact@v3.0.2
         with:
-          name: ARMTemplateParametersForFactory.json # (5) Artifact name 
+          name: ARMTemplateForFactory.json # (5) Artifact name 
 
 
       - name: Login via Az module
