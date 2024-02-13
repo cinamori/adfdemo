@@ -31,19 +31,19 @@ jobs:
         
 # Validates all of the Data Factory resources in the repository. You'll get the same validation errors as when "Validate All" is selected.
     - name: Validate
-      run: npm run build validate ${{github.workspace}}/ /subscriptions/5b0954ff-3dce-4d45-842a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.DataFactory/factories/cigithubdemo # (2) The validate command needs the root folder location of your repository where all the objects are stored. And the 2nd parameter is the resourceID of the ADF instance 
+      run: npm run build validate ${{github.workspace}}/ /subscriptions/5b0954ff-3dce-4d45-84Ex2a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.DataFactory/factories/cigithubdemo # (2) The validate command needs the root folder location of your repository where all the objects are stored. And the 2nd parameter is the resourceID of the ADF instance 
       working-directory: ${{github.workspace}}/build
  
 
     - name: Validate and Generate ARM template
-      run: npm run build export ${{github.workspace}}/ /subscriptions/5b0954ff-3dce-4d45-842a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.DataFactory/factories/cigithubdemo "ExportedArmTemplate"  # (3) The build command, as validate, needs the root folder location of your repository where all the objects are stored. And the 2nd parameter is the resourceID of the ADF instance. The 3rd parameter is the exported ARM template artifact name 
+      run: npm run build export ${{github.workspace}}/ /subscriptions/5b0954ff-3dce-4d45-842a-a27063126514/resourceGroups/CICDDemo/providers/Microsoft.DataFactory/factories/cigithubdemo "ARMTemplateForFactory.json"  # (3) The build command, as validate, needs the root folder location of your repository where all the objects are stored. And the 2nd parameter is the resourceID of the ADF instance. The 3rd parameter is the exported ARM template artifact name 
       working-directory: ${{github.workspace}}/build
  
 # In order to leverage the artifact in another job, we need to upload it with the upload action 
     - name: upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: ExportedArmTemplate # (4) use the same artifact name you used in the previous export step
+        name: ARMTemplateForFactory.json # (4) use the same artifact name you used in the previous export step
         path: ${{github.workspace}}/build/ARMTemplateForFactory.json
         
   release:
