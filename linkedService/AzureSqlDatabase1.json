@@ -1,0 +1,12 @@
+{
+	"name": "AzureSqlDatabase1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=cidemo.database.windows.net;initial catalog=cidatabase;user id=lscmsvr001",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEY4N0EyRTQxLTJDNjYtNDMxRC05NzQ3LTYwMjdFRUQ0NTgzQl80MWRmYmRjZC0yOTA4LTQwYzMtYmJkMi0wNzEwYjc2NzYwMTQiDQp9"
+		}
+	}
+}

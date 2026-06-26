@@ -1,0 +1,21 @@
+{
+	"name": "cidevdatafactory",
+	"properties": {
+		"globalParameters": {
+			"glparam": {
+				"type": "string",
+				"value": "ABC"
+			}
+		},
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "japaneast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6c596f05-b281-4ff5-b3c5-db3c9ee47260",
+		"tenantId": "16b3c013-d300-468d-ac64-7eda0820b6d3"
+	}
+}
